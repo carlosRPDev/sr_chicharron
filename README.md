@@ -1,24 +1,45 @@
-# README
+# Sr Chicharron
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este es un proyecto tipo E-Commerce, el cual esta basado en la comercializacion de productos terminados, empacados y distribuidos para el cosumo humano derivados del cerdos.
 
-Things you may want to cover:
+Teniendo en cuenta el alto impacto que ha tenido la digitalizacion de emprendimientos, queremos implementar una aplicacion web la cual sea un nuevo canal para la comercializacion de los productos.
 
-* Ruby version
+Todo ello con el objetivo primordial el aprendizaje. Para ello ese proyecto tiene como fin ser presentado como requerimiento para el BootCamp de Rails de CodigoFacilito
 
-* System dependencies
+## Tecnologias
 
-* Configuration
+* Ruby 3.1.1
+* Rails 7.0.3
+* Yarn 1.22.10
+* PostgreSQL 13.3
 
-* Database creation
+## Correr el proyecto en local
 
-* Database initialization
+### Clonar el proyecto
 
-* How to run the test suite
+```shell
+git clone git@github.com:carlosRPDev/sr_chicharron.git
 
-* Services (job queues, cache servers, search engines, etc.)
+cd sr_chicharron
+```
 
-* Deployment instructions
+### Instalar la dependencias
 
-* ...
+Usando [Bundler](https://github.com/bundler/bundler) y [Yarn](https://github.com/yarnpkg/yarn):
+
+```shell
+bundle && yarn
+```
+
+### Preparar la base de datos
+
+```shell
+rails db:create
+rails db:migrate
+```
+  
+## Iniciar el servidor
+
+```shell
+rails s
+```
